@@ -1,1 +1,1 @@
-# TSC
+# TSCPrimul meu laborator la TSC
