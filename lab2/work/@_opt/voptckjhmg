@@ -4,9 +4,9 @@ K3
 cModel Technology
 Z0 dC:\Users\botsc\Desktop\TSC\lab2
 T_opt
-Z1 ViX?D<1jjf8Cgf?IZm;=oE2
+Z1 VMG>?Xhb8E83m8_B59>z[82
 Z2 04 3 4 work top fast 0
-Z3 =1-a46bb69b88da-622f26fb-1bf-e00
+Z3 =1-000ec67e94e1-6230c55e-29e-c10
 Z4 o-quiet -auto_acc_if_foreign -work work
 Z5 n@_opt
 Z6 OE;O;6.6d;45
@@ -53,58 +53,58 @@ R8
 R9
 R10
 R11
-Z27 IeE@zg4z7R<MT>fGAO>[zW2
-Z28 V6`6FSaj6O_Q_la;B1RaSU0
+Z27 I]B3HkRbmL1=mnH==79DG:2
+Z28 VEBCnBoI9@;K2I3Z?DhHY42
+Z29 !s105 instr_register_test_sv_unit
 S1
 R7
-Z29 w1647257230
-Z30 8C:/Users/botsc/Desktop/TSC/lab2/lab01_testbench-interface/instr_register_test.sv
-Z31 FC:/Users/botsc/Desktop/TSC/lab2/lab01_testbench-interface/instr_register_test.sv
+Z30 w1647362946
+Z31 8C:/Users/botsc/Desktop/TSC/lab2/lab01_testbench-interface/instr_register_test.sv
+Z32 FC:/Users/botsc/Desktop/TSC/lab2/lab01_testbench-interface/instr_register_test.sv
 L0 8
 R17
 r1
 31
 R18
-Z32 !s100 O;GFnFkG5gNoFCZ]E>UU@2
-Z33 !s105 instr_register_test_sv_unit
+Z33 !s100 l[TRZ6eS8clDV4KLaGGK60
 !s85 0
 Ytb_ifc
 R8
 R9
 R10
 R11
-Z34 IS6HfgWNE9MhGJFVnbE?ZC3
-Z35 V[2MM;6bj4cE27ld353ZQ90
+Z34 !s100 Y[^P3K8PL9=SiH4E5X^YJ0
+Z35 IS6HfgWNE9MhGJFVnbE?ZC3
+Z36 V[2MM;6bj4cE27ld353ZQ90
+Z37 !s105 tb_ifc_sv_unit
 S1
 R7
-Z36 w1647256739
-Z37 8C:/Users/botsc/Desktop/TSC/lab2/lab01_testbench-interface/tb_ifc.sv
-Z38 FC:/Users/botsc/Desktop/TSC/lab2/lab01_testbench-interface/tb_ifc.sv
+Z38 w1647256739
+Z39 8C:/Users/botsc/Desktop/TSC/lab2/lab01_testbench-interface/tb_ifc.sv
+Z40 FC:/Users/botsc/Desktop/TSC/lab2/lab01_testbench-interface/tb_ifc.sv
 L0 5
 R17
 r1
 31
 R18
-Z39 !s100 Y[^P3K8PL9=SiH4E5X^YJ0
-Z40 !s105 tb_ifc_sv_unit
 !s85 0
 vtop
 R8
 R9
 R10
 R11
-Z41 IYcdcmH8Z16^dcbhldWR=G2
+Z41 IR]P_8GY`;Xg=LBRabb1823
 Z42 Ve:gFW1CKLAXc^T:7k2HoD1
+Z43 !s105 top_sv_unit
 S1
 R7
-Z43 w1647257311
-Z44 8C:/Users/botsc/Desktop/TSC/lab2/lab01_testbench-interface/top.sv
-Z45 FC:/Users/botsc/Desktop/TSC/lab2/lab01_testbench-interface/top.sv
+Z44 w1647363275
+Z45 8C:/Users/botsc/Desktop/TSC/lab2/lab01_testbench-interface/top.sv
+Z46 FC:/Users/botsc/Desktop/TSC/lab2/lab01_testbench-interface/top.sv
 L0 5
 R17
 r1
 31
 R18
-Z46 !s105 top_sv_unit
-Z47 !s100 ING=XnXnhPfWbbV5zRl0O1
+Z47 !s100 Zb34Lcj]>FiA0iUNMZhRK3
 !s85 0

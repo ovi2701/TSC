@@ -11,7 +11,7 @@ module top;
   // clock variables
   logic clk;
   logic test_clk;
-  tb_ifc intf_lab2();
+  tb_ifc intf_lab2(clk);
 
   // interconnecting signals
   //logic          load_en;
@@ -23,15 +23,16 @@ module top;
 
   // instantiate testbench and connect ports
   instr_register_test test (
-    .clk(test_clk),
-    .load_en(intf_lab2.load_en),
-    .reset_n(intf_lab2.reset_n),
-    .operand_a(intf_lab2.operand_a),
-    .operand_b(intf_lab2.operand_b),
-    .opcode(intf_lab2.opcode),
-    .write_pointer(intf_lab2.write_pointer),
-    .read_pointer(intf_lab2.read_pointer),
-    .instruction_word(intf_lab2.instruction_word)
+    //.clk(test_clk),
+    //.load_en(intf_lab2.load_en),
+    //.reset_n(intf_lab2.reset_n),
+    //.operand_a(intf_lab2.operand_a),
+    //.operand_b(intf_lab2.operand_b),
+    //.opcode(intf_lab2.opcode),
+    //.write_pointer(intf_lab2.write_pointer),
+    //.read_pointer(intf_lab2.read_pointer),
+    //.instruction_word(intf_lab2.instruction_word)
+	.intf_lab2(intf_lab2)
    );
 
   // instantiate design and connect ports
