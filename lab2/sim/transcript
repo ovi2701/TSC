@@ -27,34 +27,118 @@
 # Refreshing C:\Users\botsc\Desktop\TSC\lab2\sim\work.tb_ifc
 # Refreshing C:\Users\botsc\Desktop\TSC\lab2\sim\work.instr_register_test
 # Refreshing C:\Users\botsc\Desktop\TSC\lab2\sim\work.instr_register
-# ** Warning: (vsim-3008) ../lab01_testbench-interface/instr_register_test.sv(28): [CNNODP] - Component name (clk) is not on a downward path.
-#         Region: /top/test
-# ** Error: (vsim-8343) ../lab01_testbench-interface/instr_register_test.sv(26): Clocking block output intf_lab2.cb.load_en is not legal
-# for the left hand side of this or another expression.
-#         Region: /top/test
-# ** Warning: (vsim-8441) ../lab01_testbench-interface/instr_register_test.sv(69): Clocking block output intf_lab2.cb.opcode is not legal in this
+# ** Warning: (vsim-8441) ../lab01_testbench-interface/instr_register_test.sv(79): Clocking block output intf_lab2.cb.opcode is not legal in this
 # or another expression.
 #         Region: /top/test
-# ** Warning: (vsim-8441) ../lab01_testbench-interface/instr_register_test.sv(67): Clocking block output intf_lab2.cb.operand_a is not legal in this
+# ** Warning: (vsim-8441) ../lab01_testbench-interface/instr_register_test.sv(77): Clocking block output intf_lab2.cb.operand_a is not legal in this
 # or another expression.
 #         Region: /top/test
-# ** Warning: (vsim-8441) ../lab01_testbench-interface/instr_register_test.sv(68): Clocking block output intf_lab2.cb.operand_b is not legal in this
+# ** Warning: (vsim-8441) ../lab01_testbench-interface/instr_register_test.sv(78): Clocking block output intf_lab2.cb.operand_b is not legal in this
 # or another expression.
 #         Region: /top/test
-# ** Warning: (vsim-8441) ../lab01_testbench-interface/instr_register_test.sv(25): Clocking block output intf_lab2.cb.read_pointer is not legal in this
+# ** Warning: (vsim-8441) ../lab01_testbench-interface/instr_register_test.sv(31): Clocking block output intf_lab2.cb.read_pointer is not legal in this
 # or another expression.
 #         Region: /top/test
-# ** Error: (vsim-8343) ../lab01_testbench-interface/instr_register_test.sv(27): Clocking block output intf_lab2.cb.reset_n is not legal
-# for the left hand side of this or another expression.
-#         Region: /top/test
-# ** Warning: (vsim-8441) ../lab01_testbench-interface/instr_register_test.sv(24): Clocking block output intf_lab2.cb.write_pointer is not legal in this
+# ** Warning: (vsim-8441) ../lab01_testbench-interface/instr_register_test.sv(30): Clocking block output intf_lab2.cb.write_pointer is not legal in this
 # or another expression.
 #         Region: /top/test
-# ** Error: (vsim-3773) ../lab01_testbench-interface/instr_register_test.sv(82): Interface item 'instruction_word' is not in modport 'TB'.
-#         Region: /top/test
-# ** Error: (vsim-3773) ../lab01_testbench-interface/instr_register_test.sv(45): Interface item 'read_pointer' is not in modport 'TB'.
-#         Region: /top/test
-# Error loading design
-# Error: Error loading design 
-#        Pausing macro execution 
-# MACRO ./run.do PAUSED at line 23
+# 
+# 
+# ***********************************************************
+# ***  THIS IS NOT A SELF-CHECKING TESTBENCH (YET).  YOU  ***
+# ***  NEED TO VISUALLY VERIFY THAT THE OUTPUT VALUES     ***
+# ***  MATCH THE INPUT VALUES FOR EACH REGISTER LOCATION  ***
+# ***********************************************************
+# 
+# Reseting the instruction register...
+# first header
+# 
+# Writing values to register stack...
+# Writing to register location 0: 
+#   opcode = 1 (PASSA)
+#   operand_a = -12
+#   operand_b = 4
+# 
+# Printing transaction:                   20 ns 
+# Writing to register location 1: 
+#   opcode = 3 (ADD)
+#   operand_a = -9
+#   operand_b = 9
+# 
+# Printing transaction:                   30 ns 
+# Writing to register location 2: 
+#   opcode = 5 (MULT)
+#   operand_a = -15
+#   operand_b = 13
+# 
+# Printing transaction:                   40 ns 
+# 
+# Reading back the same register locations written...
+# Read from register location 2: 
+#   opcode = 5 (MULT)
+#   operand_a = -15
+#   operand_b = 13
+# 
+# Printing results:                   55 ns 
+# Read from register location 1: 
+#   opcode = 3 (ADD)
+#   operand_a = -9
+#   operand_b = 9
+# 
+# Printing results:                   65 ns 
+# Read from register location 0: 
+#   opcode = 1 (PASSA)
+#   operand_a = -12
+#   operand_b = 4
+# 
+# Printing results:                   75 ns 
+# Read from register location 2: 
+#   opcode = 5 (MULT)
+#   operand_a = -15
+#   operand_b = 13
+# 
+# Printing results:                   85 ns 
+# Read from register location 1: 
+#   opcode = 3 (ADD)
+#   operand_a = -9
+#   operand_b = 9
+# 
+# Printing results:                   95 ns 
+# Read from register location 0: 
+#   opcode = 1 (PASSA)
+#   operand_a = -12
+#   operand_b = 4
+# 
+# Printing results:                  105 ns 
+# Read from register location 2: 
+#   opcode = 5 (MULT)
+#   operand_a = -15
+#   operand_b = 13
+# 
+# Printing results:                  115 ns 
+# Read from register location 1: 
+#   opcode = 3 (ADD)
+#   operand_a = -9
+#   operand_b = 9
+# 
+# Printing results:                  125 ns 
+# Read from register location 0: 
+#   opcode = 1 (PASSA)
+#   operand_a = -12
+#   operand_b = 4
+# 
+# Printing results:                  135 ns 
+# 
+# ***********************************************************
+# ***  THIS IS NOT A SELF-CHECKING TESTBENCH (YET).  YOU  ***
+# ***  NEED TO VISUALLY VERIFY THAT THE OUTPUT VALUES     ***
+# ***  MATCH THE INPUT VALUES FOR EACH REGISTER LOCATION  ***
+# ***********************************************************
+# 
+# ** Note: $finish    : ../lab01_testbench-interface/instr_register_test.sv(65)
+#    Time: 140 ns  Iteration: 2  Instance: /top/test
+# 1
+# Break in Module instr_register_test at ../lab01_testbench-interface/instr_register_test.sv line 65
+# Simulation Breakpoint: 1
+# Break in Module instr_register_test at ../lab01_testbench-interface/instr_register_test.sv line 65
+# MACRO ./run.do PAUSED at line 45
