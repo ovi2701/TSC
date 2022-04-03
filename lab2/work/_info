@@ -4,107 +4,137 @@ K3
 cModel Technology
 Z0 dC:\Users\botsc\Desktop\TSC\lab2
 T_opt
-VMG>?Xhb8E83m8_B59>z[82
-Z1 04 3 4 work top fast 0
-Z2 =1-000ec67e94e1-6230c55e-29e-c10
-Z3 o-quiet -auto_acc_if_foreign -work work
-Z4 n@_opt
-Z5 OE;O;6.6d;45
-Z6 dC:\Users\botsc\Desktop\TSC\lab2
-vinstr_register
-Z7 Mx1 6 sv_std 3 std
-Z8 DXx6 sv_std 3 std 0 22 WnQ=;W1X^o9K1PIQTgInR3
-Z9 Mx2 4 work 18 instr_register_pkg
-Z10 DXx4 work 18 instr_register_pkg 0 22 :JTF@fFZEAY;_aRJ`=BP83
-Z11 Izlgh4QQ_5WV`>EDVk6A=21
-Z12 V3z9A3Eb_VM7O2iR_@`ig80
-S1
+Z1 Vd0:7=M:4imGI53MjdGg6?3
+Z2 04 4 4 work test fast 0
+Z3 =1-a46bb69b88da-6249d796-295-26c8
+Z4 o-quiet -auto_acc_if_foreign -work work
+Z5 n@_opt
+Z6 OE;O;6.6d;45
+Z7 dC:\Users\botsc\Desktop\TSC\lab2
+T_opt1
+Z8 V;@O?c_5f]5Wzkg8DRb;[k0
+Z9 04 19 4 work instr_register_test fast 0
+Z10 =1-a46bb69b88da-6249d800-286-12b4
+R4
+Z11 n@_opt1
 R6
-Z13 w1647257161
-Z14 8C:/Users/botsc/Desktop/TSC/lab2/lab_dut/instr_register.sv
-Z15 FC:/Users/botsc/Desktop/TSC/lab2/lab_dut/instr_register.sv
+R7
+T_opt2
+VoEQ_NUPLieIiFkemQRaKJ1
+R9
+Z12 =1-a46bb69b88da-6249d89c-35b-2834
+Z13 o-quiet -auto_acc_if_foreign -work work +acc
+Z14 n@_opt2
+R6
+R7
+vinstr_register
+Z15 Mx1 6 sv_std 3 std
+Z16 DXx6 sv_std 3 std 0 22 WnQ=;W1X^o9K1PIQTgInR3
+Z17 Mx2 4 work 18 instr_register_pkg
+Z18 DXx4 work 18 instr_register_pkg 0 22 L2d[Fn9cmlG2n>VdELTNM1
+Z19 I]WHLePQl?W44J:EAPCkgm2
+Z20 V3z9A3Eb_VM7O2iR_@`ig80
+S1
+R7
+Z21 w1649005018
+Z22 8C:/Users/botsc/Desktop/TSC/lab2/lab_dut/instr_register.sv
+Z23 FC:/Users/botsc/Desktop/TSC/lab2/lab_dut/instr_register.sv
 L0 9
-Z16 OE;L;6.6d;45
+Z24 OE;L;6.6d;45
 r1
 31
-Z17 o-work work -L mtiAvm -L mtiOvm -L mtiUPF
-Z18 !s100 6^c4H@z>TICN;NJ=0DO5K2
-Z19 !s105 instr_register_sv_unit
+Z25 o-work work -L mtiAvm -L mtiOvm -L mtiUPF
+Z26 !s100 PIhF2V;Qfe:NhgQiOo8`m3
+Z27 !s105 instr_register_sv_unit
 !s85 0
 Xinstr_register_pkg
-R7
-R8
-Z20 I:JTF@fFZEAY;_aRJ`=BP83
-Z21 V:JTF@fFZEAY;_aRJ`=BP83
-S1
-R6
-Z22 w1647257154
-Z23 8C:/Users/botsc/Desktop/TSC/lab2/lab_dut/instr_register_pkg.sv
-Z24 FC:/Users/botsc/Desktop/TSC/lab2/lab_dut/instr_register_pkg.sv
-L0 5
+R15
 R16
+Z28 IL2d[Fn9cmlG2n>VdELTNM1
+Z29 VL2d[Fn9cmlG2n>VdELTNM1
+S1
+R7
+Z30 w1649004824
+Z31 8C:/Users/botsc/Desktop/TSC/lab2/lab_dut/instr_register_pkg.sv
+Z32 FC:/Users/botsc/Desktop/TSC/lab2/lab_dut/instr_register_pkg.sv
+L0 5
+R24
 r1
 31
-R17
-Z25 !s100 V^fH5UCOegY6PL:OBDSV^3
+R25
+Z33 !s100 M71ZB`Al=cILUH^0=4inN2
 !s85 0
 vinstr_register_test
-R7
-R8
-R9
-R10
-Z26 I]B3HkRbmL1=mnH==79DG:2
-Z27 VEBCnBoI9@;K2I3Z?DhHY42
-S1
-R6
-Z28 w1647362946
-Z29 8C:/Users/botsc/Desktop/TSC/lab2/lab01_testbench-interface/instr_register_test.sv
-Z30 FC:/Users/botsc/Desktop/TSC/lab2/lab01_testbench-interface/instr_register_test.sv
-L0 8
+R15
 R16
+R17
+R18
+Z34 IhVW2]zPXHJIIIOZflQMMZ0
+Z35 VEBCnBoI9@;K2I3Z?DhHY42
+S1
+R7
+Z36 w1649005611
+Z37 8C:/Users/botsc/Desktop/TSC/lab2/lab01_testbench-interface/instr_register_test.sv
+Z38 FC:/Users/botsc/Desktop/TSC/lab2/lab01_testbench-interface/instr_register_test.sv
+L0 8
+R24
 r1
 31
-R17
-Z31 !s105 instr_register_test_sv_unit
-Z32 !s100 l[TRZ6eS8clDV4KLaGGK60
+R25
+Z39 !s100 JZMEf9iLjgFW_0V8j5cHh1
+Z40 !s105 instr_register_test_sv_unit
 !s85 0
 Ytb_ifc
-R7
-R8
-R9
-R10
-Z33 IS6HfgWNE9MhGJFVnbE?ZC3
-Z34 V[2MM;6bj4cE27ld353ZQ90
-S1
-R6
-Z35 w1647256739
-Z36 8C:/Users/botsc/Desktop/TSC/lab2/lab01_testbench-interface/tb_ifc.sv
-Z37 FC:/Users/botsc/Desktop/TSC/lab2/lab01_testbench-interface/tb_ifc.sv
-L0 5
+R15
 R16
+R17
+R18
+Z41 IBIj<lHez?d:MPDgh4e0c`2
+Z42 V[2MM;6bj4cE27ld353ZQ90
+S1
+R7
+Z43 w1648453133
+Z44 8C:/Users/botsc/Desktop/TSC/lab2/lab01_testbench-interface/tb_ifc.sv
+Z45 FC:/Users/botsc/Desktop/TSC/lab2/lab01_testbench-interface/tb_ifc.sv
+L0 5
+R24
 r1
 31
-R17
-Z38 !s100 Y[^P3K8PL9=SiH4E5X^YJ0
-Z39 !s105 tb_ifc_sv_unit
+R25
+Z46 !s100 3eXmZ@C15DEMbe]z]z>zd0
+Z47 !s105 tb_ifc_sv_unit
+!s85 0
+vtest
+Z48 IURf_MOZ]`U[oEJ70C1G3U2
+Z49 Vk<3<[f=78GX=_HO53D;7>3
+R7
+Z50 w1614781244
+Z51 8C:/Users/botsc/Desktop/TSC/lab2/test/test.v
+Z52 FC:/Users/botsc/Desktop/TSC/lab2/test/test.v
+L0 7
+R24
+r1
+31
+R25
+Z53 !s100 UMPJ7EaNf`K3CO`bPi<`Q2
 !s85 0
 vtop
-R7
-R8
-R9
-R10
-Z40 IR]P_8GY`;Xg=LBRabb1823
-Z41 Ve:gFW1CKLAXc^T:7k2HoD1
-S1
-R6
-Z42 w1647363275
-Z43 8C:/Users/botsc/Desktop/TSC/lab2/lab01_testbench-interface/top.sv
-Z44 FC:/Users/botsc/Desktop/TSC/lab2/lab01_testbench-interface/top.sv
-L0 5
+R15
 R16
+R17
+R18
+Z54 IR]P_8GY`;Xg=LBRabb1823
+Z55 Ve:gFW1CKLAXc^T:7k2HoD1
+S1
+R7
+Z56 w1647366875
+Z57 8C:/Users/botsc/Desktop/TSC/lab2/lab01_testbench-interface/top.sv
+Z58 FC:/Users/botsc/Desktop/TSC/lab2/lab01_testbench-interface/top.sv
+L0 5
+R24
 r1
 31
-R17
-Z45 !s105 top_sv_unit
-Z46 !s100 Zb34Lcj]>FiA0iUNMZhRK3
+R25
+Z59 !s100 Zb34Lcj]>FiA0iUNMZhRK3
+Z60 !s105 top_sv_unit
 !s85 0

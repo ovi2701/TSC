@@ -38,7 +38,7 @@ module instr_register_test
 
     $display("\nWriting values to register stack...");
     @(posedge intf_lab2.cb) intf_lab2.cb.load_en <= 1'b1;  // enable writing to register
-    repeat (3) begin
+    repeat (20) begin
       @(posedge intf_lab2.cb) randomize_transaction;
       @(negedge intf_lab2.cb) print_transaction;
     end
@@ -46,14 +46,12 @@ module instr_register_test
 
     // read back and display same three register locations
     $display("\nReading back the same register locations written...");
-	repeat(3) begin
-    for (int i=2; i>=0; i--) begin
+    for (int i=0; i<=19; i++) begin
       // later labs will replace this loop with iterating through a
       // scoreboard to determine which addresses were written and
       // the expected values to be read back
       @(posedge intf_lab2.cb) intf_lab2.cb.read_pointer <= i;
       @(negedge intf_lab2.cb) print_results;
-    end
 	end
 	
     @(posedge intf_lab2.cb) ;
