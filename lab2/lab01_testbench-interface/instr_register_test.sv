@@ -6,18 +6,26 @@
  **********************************************************************/
 
 module instr_register_test
+
   import instr_register_pkg::*;  // user-defined types are defined in instr_register_pkg.sv
   (
   tb_ifc.TB intf_lab2
   );
 
   //timeunit 1ns/1ns;
-
-  //seed-ul reprezinta valoarea initiala cu care se incepe random-izarea si se foloseste pt a stabiliza codul, pt a avea aceleasi rez pe cod cu aceleasi valori random
-  int seed = 555;
-
   //tipmul este 0
-  initial begin
+
+  //initial begin
+  class first_test;
+  virtual tb_ifc.TB intf_lab2;
+  //seed-ul reprezinta valoarea initiala cu care se incepe random-izarea si se foloseste pt a stabiliza codul, pt a avea aceleasi rez pe cod cu aceleasi valori random
+  //int seed = 555;
+
+   function new(virtual tb_ifc.TB intf_lab2);
+      this.intf_lab2 = intf_lab2;
+    endfunction
+
+  task run();
 	//valorile din display afisate in transcript la inceput
     $display("\n\n***********************************************************");
     $display(    "***  THIS IS NOT A SELF-CHECKING TESTBENCH (YET).  YOU  ***");
@@ -61,7 +69,8 @@ module instr_register_test
     $display(  "***  MATCH THE INPUT VALUES FOR EACH REGISTER LOCATION  ***");
     $display(  "***********************************************************\n");
     $finish;
-  end
+  //end
+  endtask
 
   function void randomize_transaction;
     // A later lab will replace this function with SystemVerilog
@@ -72,9 +81,13 @@ module instr_register_test
     // write_pointer values in a later lab
     //
     static int temp = 0;
-    intf_lab2.cb.operand_a     <= $random(seed)%16;                 // between -15 and 15
-    intf_lab2.cb.operand_b     <= $unsigned($random)%16;            // between 0 and 15
-    intf_lab2.cb.opcode        <= opcode_t'($unsigned($random)%8);  // between 0 and 7, cast to opcode_t type  //converteste index in string
+    // intf_lab2.cb.operand_a     <= $random(seed)%16;                 // between -15 and 15
+    // intf_lab2.cb.operand_b     <= $unsigned($random)%16;            // between 0 and 15
+    // intf_lab2.cb.opcode        <= opcode_t'($unsigned($random)%8);  // between 0 and 7, cast to opcode_t type  //converteste index in string
+
+    intf_lab2.cb.operand_a     <= $urandom%16;                 // between -15 and 15
+    intf_lab2.cb.operand_b     <= $unsigned($urandom)%16;            // between 0 and 15
+    intf_lab2.cb.opcode        <= opcode_t'($unsigned($urandom)%8);  // between 0 and 7, cast to opcode_t type  //converteste index in string
     intf_lab2.cb.write_pointer <= temp++;
   endfunction: randomize_transaction
 
@@ -93,5 +106,19 @@ module instr_register_test
     $display("  operand_b = %0d\n", intf_lab2.cb.instruction_word.op_b);
 	$display("Printing results: %d ns ",$time);
   endfunction: print_results
+ 
+endclass: first_test
+
+  initial begin 
+    first_test ft;
+    ft = new(intf_lab2);
+    //ft.intf_lab2 = intf_lab2;
+    ft.run();
+  end
 
 endmodule: instr_register_test
+
+
+//daca vrem sa cream o clasa, se pune totul in acea clasa in afara de initial begin sau variabile interne(ex:seed)
+//declaram o variabila in clasa pentru interfata: virtual tb_ifc.nume_modport.nume_interfata
+
