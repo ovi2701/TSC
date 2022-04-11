@@ -17,7 +17,27 @@ module instr_register_test
 
   //initial begin
   class first_test;
+  parameter NR_OF_OPERATIONS = 10;
   virtual tb_ifc.TB intf_lab2;
+
+  covergroup my_coverage;
+    coverpoint intf_lab2.cb.operand_a{
+      bins opA_negative = {[-15:-1]};
+      bins opA_zero = {0};
+      bins opA_positive = {[1:15]};
+    }
+
+    coverpoint intf_lab2.cb.operand_b{
+      bins opB_zero = {0};
+      bins opB_positive = {[1:15]};
+    }
+  
+    coverpoint intf_lab2.cb.opcode{
+      bins opcode_zero = {0};
+      bins opcode_positive = {[1:7]};
+    }
+
+  endgroup
   //seed-ul reprezinta valoarea initiala cu care se incepe random-izarea si se foloseste pt a stabiliza codul, pt a avea aceleasi rez pe cod cu aceleasi valori random
   //int seed = 555;
 
@@ -46,7 +66,7 @@ module instr_register_test
 
     $display("\nWriting values to register stack...");
     @(posedge intf_lab2.cb) intf_lab2.cb.load_en <= 1'b1;  // enable writing to register
-    repeat (20) begin
+    repeat (NR_OF_OPERATIONS) begin
       @(posedge intf_lab2.cb) randomize_transaction;
       @(negedge intf_lab2.cb) print_transaction;
     end
@@ -54,7 +74,7 @@ module instr_register_test
 
     // read back and display same three register locations
     $display("\nReading back the same register locations written...");
-    for (int i=0; i<=19; i++) begin
+    for (int i=0; i<NR_OF_OPERATIONS; i++) begin
       // later labs will replace this loop with iterating through a
       // scoreboard to determine which addresses were written and
       // the expected values to be read back
@@ -97,6 +117,7 @@ module instr_register_test
     $display("  operand_a = %0d",   intf_lab2.cb.operand_a);
     $display("  operand_b = %0d\n", intf_lab2.cb.operand_b);
 	$display("Printing transaction: %d ns ",$time);
+  my_coverage.sample();
   endfunction: print_transaction
 
   function void print_results;
@@ -105,6 +126,7 @@ module instr_register_test
     $display("  operand_a = %0d",   intf_lab2.cb.instruction_word.op_a);
     $display("  operand_b = %0d\n", intf_lab2.cb.instruction_word.op_b);
 	$display("Printing results: %d ns ",$time);
+  my_coverage.sample();
   endfunction: print_results
  
 endclass: first_test
@@ -122,3 +144,4 @@ endmodule: instr_register_test
 //daca vrem sa cream o clasa, se pune totul in acea clasa in afara de initial begin sau variabile interne(ex:seed)
 //declaram o variabila in clasa pentru interfata: virtual tb_ifc.nume_modport.nume_interfata
 
+//tema: coverpoint pentru rezultat
