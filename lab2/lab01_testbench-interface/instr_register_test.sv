@@ -21,20 +21,28 @@ module instr_register_test
   virtual tb_ifc.TB intf_lab2;
 
   covergroup my_coverage;
-    coverpoint intf_lab2.cb.operand_a{
-      bins opA_negative = {[-15:-1]};
+
+    OPA_COVER:coverpoint intf_lab2.cb.operand_a{
+      bins opA_negative [] = {[-15:-1]};
       bins opA_zero = {0};
-      bins opA_positive = {[1:15]};
+      bins opA_positive [] = {[1:15]};
     }
 
-    coverpoint intf_lab2.cb.operand_b{
+    OPB_COVER:coverpoint intf_lab2.cb.operand_b{
       bins opB_zero = {0};
-      bins opB_positive = {[1:15]};
+      bins opB_positive [] = {[1:15]};
     }
   
-    coverpoint intf_lab2.cb.opcode{
+    OPCODE_COVER:coverpoint intf_lab2.cb.opcode{
       bins opcode_zero = {0};
-      bins opcode_positive = {[1:7]};
+      bins opcode_positive [] = {[1:7]};
+    }
+
+    RES_COVER:coverpoint intf_lab2.cb.instruction_word.res{
+      bins res_neg [] = {[-30:-1]};
+      bins res_zero = {0};
+      bins res_pos [] = {[1:30]};
+
     }
 
   endgroup
@@ -42,6 +50,7 @@ module instr_register_test
   //int seed = 555;
 
    function new(virtual tb_ifc.TB intf_lab2);
+      my_coverage = new();
       this.intf_lab2 = intf_lab2;
     endfunction
 
@@ -105,7 +114,7 @@ module instr_register_test
     // intf_lab2.cb.operand_b     <= $unsigned($random)%16;            // between 0 and 15
     // intf_lab2.cb.opcode        <= opcode_t'($unsigned($random)%8);  // between 0 and 7, cast to opcode_t type  //converteste index in string
 
-    intf_lab2.cb.operand_a     <= $urandom%16;                 // between -15 and 15
+    intf_lab2.cb.operand_a     <= $signed($urandom)%16;                 // between -15 and 15
     intf_lab2.cb.operand_b     <= $unsigned($urandom)%16;            // between 0 and 15
     intf_lab2.cb.opcode        <= opcode_t'($unsigned($urandom)%8);  // between 0 and 7, cast to opcode_t type  //converteste index in string
     intf_lab2.cb.write_pointer <= temp++;

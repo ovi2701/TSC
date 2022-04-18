@@ -1,15 +1,20 @@
-# 0
+# 1
+# Model Technology ModelSim SE vlog 6.6d Compiler 2010.11 Nov  1 2010
+# -- Compiling package instr_register_pkg
+# -- Compiling module instr_register
+# -- Importing package instr_register_pkg
+# -- Compiling module instr_register_test
+# -- Compiling interface tb_ifc
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
 # vsim +notimingchecks +nowarnTSCALE -sva -nocoverage -quiet -sv_seed 4444 -novopt top 
-# //  ModelSim SE 6.6d Nov  1 2010 
-# //
-# //  Copyright 1991-2010 Mentor Graphics Corporation
-# //              All Rights Reserved.
-# //
-# //  THIS WORK CONTAINS TRADE SECRET AND 
-# //  PROPRIETARY INFORMATION WHICH IS THE PROPERTY
-# //  OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
-# //  AND IS SUBJECT TO LICENSE TERMS.
-# //
+# Refreshing C:\Users\botsc\Desktop\TSC\lab2\sim\work.instr_register_pkg
+# Refreshing C:\Users\botsc\Desktop\TSC\lab2\sim\work.top
+# Refreshing C:\Users\botsc\Desktop\TSC\lab2\sim\work.tb_ifc
+# Refreshing C:\Users\botsc\Desktop\TSC\lab2\sim\work.instr_register_test
+# Refreshing C:\Users\botsc\Desktop\TSC\lab2\sim\work.instr_register
 # ** Warning: (vsim-8441) ../lab01_testbench-interface/instr_register_test.sv(35): Clocking block output #parent#.intf_lab2.cb.opcode is not legal in this
 # or another expression.
 #         Region: /top/test
@@ -28,21 +33,23 @@
 # ** Warning: (vsim-8441) ../lab01_testbench-interface/instr_register_test.sv(30): Clocking block output #parent#.intf_lab2.cb.operand_b is not legal in this
 # or another expression.
 #         Region: /top/test
-# ** Warning: (vsim-8441) ../lab01_testbench-interface/instr_register_test.sv(116): Clocking block output intf_lab2.cb.opcode is not legal in this
+# ** Warning: (vsim-8441) ../lab01_testbench-interface/instr_register_test.sv(124): Clocking block output intf_lab2.cb.opcode is not legal in this
 # or another expression.
 #         Region: /top/test
-# ** Warning: (vsim-8441) ../lab01_testbench-interface/instr_register_test.sv(117): Clocking block output intf_lab2.cb.operand_a is not legal in this
+# ** Warning: (vsim-8441) ../lab01_testbench-interface/instr_register_test.sv(125): Clocking block output intf_lab2.cb.operand_a is not legal in this
 # or another expression.
 #         Region: /top/test
-# ** Warning: (vsim-8441) ../lab01_testbench-interface/instr_register_test.sv(118): Clocking block output intf_lab2.cb.operand_b is not legal in this
+# ** Warning: (vsim-8441) ../lab01_testbench-interface/instr_register_test.sv(126): Clocking block output intf_lab2.cb.operand_b is not legal in this
 # or another expression.
 #         Region: /top/test
-# ** Warning: (vsim-8441) ../lab01_testbench-interface/instr_register_test.sv(115): Clocking block output intf_lab2.cb.write_pointer is not legal in this
+# ** Warning: (vsim-8441) ../lab01_testbench-interface/instr_register_test.sv(123): Clocking block output intf_lab2.cb.write_pointer is not legal in this
 # or another expression.
 #         Region: /top/test
-# ** Warning: (vsim-8441) ../lab01_testbench-interface/instr_register_test.sv(124): Clocking block output intf_lab2.cb.read_pointer is not legal in this
+# ** Warning: (vsim-8441) ../lab01_testbench-interface/instr_register_test.sv(132): Clocking block output intf_lab2.cb.read_pointer is not legal in this
 # or another expression.
 #         Region: /top/test
+# ** Error: (vish-4014) No objects found matching '/top/test/seed'.
+# Executing ONERROR command at macro ./wave.do line 3
 # 
 # 
 # ***********************************************************
@@ -184,5 +191,10 @@
 # ***  MATCH THE INPUT VALUES FOR EACH REGISTER LOCATION  ***
 # ***********************************************************
 # 
-# ** Note: $finish    : ../lab01_testbench-interface/instr_register_test.sv(91)
+# ** Note: $finish    : ../lab01_testbench-interface/instr_register_test.sv(99)
 #    Time: 220 ns  Iteration: 2  Instance: /top/test
+# 1
+# Break in Task run at ../lab01_testbench-interface/instr_register_test.sv line 99
+# Simulation Breakpoint: 1
+# Break in Task run at ../lab01_testbench-interface/instr_register_test.sv line 99
+# MACRO ./run.do PAUSED at line 48
