@@ -9,43 +9,43 @@
 # 
 # Top level modules:
 # 	top
-# vsim +notimingchecks +nowarnTSCALE -sva -nocoverage -quiet -sv_seed 5555 -novopt top 
+# vsim -coverage -sva -quiet -sv_seed 5555 -novopt top 
 # Refreshing C:\Users\botsc\Desktop\TSC\lab2\sim\work.instr_register_pkg
 # Refreshing C:\Users\botsc\Desktop\TSC\lab2\sim\work.top
 # Refreshing C:\Users\botsc\Desktop\TSC\lab2\sim\work.tb_ifc
 # Refreshing C:\Users\botsc\Desktop\TSC\lab2\sim\work.instr_register_test
 # Refreshing C:\Users\botsc\Desktop\TSC\lab2\sim\work.instr_register
-# ** Warning: (vsim-8441) ../lab01_testbench-interface/instr_register_test.sv(35): Clocking block output #parent#.intf_lab2.cb.opcode is not legal in this
+# ** Warning: (vsim-8441) ../lab01_testbench-interface/instr_register_test.sv(36): Clocking block output #parent#.intf_lab2.cb.opcode is not legal in this
 # or another expression.
 #         Region: /top/test
-# ** Warning: (vsim-8441) ../lab01_testbench-interface/instr_register_test.sv(24): Clocking block output #parent#.intf_lab2.cb.operand_a is not legal in this
+# ** Warning: (vsim-8441) ../lab01_testbench-interface/instr_register_test.sv(25): Clocking block output #parent#.intf_lab2.cb.operand_a is not legal in this
 # or another expression.
 #         Region: /top/test
-# ** Warning: (vsim-8441) ../lab01_testbench-interface/instr_register_test.sv(30): Clocking block output #parent#.intf_lab2.cb.operand_b is not legal in this
+# ** Warning: (vsim-8441) ../lab01_testbench-interface/instr_register_test.sv(31): Clocking block output #parent#.intf_lab2.cb.operand_b is not legal in this
 # or another expression.
 #         Region: /top/test
-# ** Warning: (vsim-8441) ../lab01_testbench-interface/instr_register_test.sv(35): Clocking block output #parent#.intf_lab2.cb.opcode is not legal in this
+# ** Warning: (vsim-8441) ../lab01_testbench-interface/instr_register_test.sv(36): Clocking block output #parent#.intf_lab2.cb.opcode is not legal in this
 # or another expression.
 #         Region: /top/test
-# ** Warning: (vsim-8441) ../lab01_testbench-interface/instr_register_test.sv(24): Clocking block output #parent#.intf_lab2.cb.operand_a is not legal in this
+# ** Warning: (vsim-8441) ../lab01_testbench-interface/instr_register_test.sv(25): Clocking block output #parent#.intf_lab2.cb.operand_a is not legal in this
 # or another expression.
 #         Region: /top/test
-# ** Warning: (vsim-8441) ../lab01_testbench-interface/instr_register_test.sv(30): Clocking block output #parent#.intf_lab2.cb.operand_b is not legal in this
+# ** Warning: (vsim-8441) ../lab01_testbench-interface/instr_register_test.sv(31): Clocking block output #parent#.intf_lab2.cb.operand_b is not legal in this
 # or another expression.
 #         Region: /top/test
-# ** Warning: (vsim-8441) ../lab01_testbench-interface/instr_register_test.sv(124): Clocking block output intf_lab2.cb.opcode is not legal in this
+# ** Warning: (vsim-8441) ../lab01_testbench-interface/instr_register_test.sv(125): Clocking block output intf_lab2.cb.opcode is not legal in this
 # or another expression.
 #         Region: /top/test
-# ** Warning: (vsim-8441) ../lab01_testbench-interface/instr_register_test.sv(125): Clocking block output intf_lab2.cb.operand_a is not legal in this
+# ** Warning: (vsim-8441) ../lab01_testbench-interface/instr_register_test.sv(126): Clocking block output intf_lab2.cb.operand_a is not legal in this
 # or another expression.
 #         Region: /top/test
-# ** Warning: (vsim-8441) ../lab01_testbench-interface/instr_register_test.sv(126): Clocking block output intf_lab2.cb.operand_b is not legal in this
+# ** Warning: (vsim-8441) ../lab01_testbench-interface/instr_register_test.sv(127): Clocking block output intf_lab2.cb.operand_b is not legal in this
 # or another expression.
 #         Region: /top/test
-# ** Warning: (vsim-8441) ../lab01_testbench-interface/instr_register_test.sv(123): Clocking block output intf_lab2.cb.write_pointer is not legal in this
+# ** Warning: (vsim-8441) ../lab01_testbench-interface/instr_register_test.sv(124): Clocking block output intf_lab2.cb.write_pointer is not legal in this
 # or another expression.
 #         Region: /top/test
-# ** Warning: (vsim-8441) ../lab01_testbench-interface/instr_register_test.sv(132): Clocking block output intf_lab2.cb.read_pointer is not legal in this
+# ** Warning: (vsim-8441) ../lab01_testbench-interface/instr_register_test.sv(133): Clocking block output intf_lab2.cb.read_pointer is not legal in this
 # or another expression.
 #         Region: /top/test
 # ** Error: (vish-4014) No objects found matching '/top/test/seed'.
@@ -92,36 +92,6 @@
 #   operand_b = 2
 # 
 # Printing transaction:                   60 ns 
-# Writing to register location 5: 
-#   opcode = 6 (DIV)
-#   operand_a = 4
-#   operand_b = 10
-# 
-# Printing transaction:                   70 ns 
-# Writing to register location 6: 
-#   opcode = 3 (ADD)
-#   operand_a = -15
-#   operand_b = 3
-# 
-# Printing transaction:                   80 ns 
-# Writing to register location 7: 
-#   opcode = 5 (MULT)
-#   operand_a = 15
-#   operand_b = 8
-# 
-# Printing transaction:                   90 ns 
-# Writing to register location 8: 
-#   opcode = 0 (ZERO)
-#   operand_a = 5
-#   operand_b = 14
-# 
-# Printing transaction:                  100 ns 
-# Writing to register location 9: 
-#   opcode = 7 (MOD)
-#   operand_a = 15
-#   operand_b = 9
-# 
-# Printing transaction:                  110 ns 
 # 
 # Reading back the same register locations written...
 # Read from register location 0: 
@@ -129,61 +99,31 @@
 #   operand_a = 8
 #   operand_b = 2
 # 
-# Printing results:                  125 ns 
+# Printing results:                   75 ns 
 # Read from register location 1: 
 #   opcode = 3 (ADD)
 #   operand_a = -5
 #   operand_b = 14
 # 
-# Printing results:                  135 ns 
+# Printing results:                   85 ns 
 # Read from register location 2: 
 #   opcode = 4 (SUB)
 #   operand_a = 13
 #   operand_b = 8
 # 
-# Printing results:                  145 ns 
+# Printing results:                   95 ns 
 # Read from register location 3: 
 #   opcode = 2 (PASSB)
 #   operand_a = -12
 #   operand_b = 12
 # 
-# Printing results:                  155 ns 
+# Printing results:                  105 ns 
 # Read from register location 4: 
 #   opcode = 4 (SUB)
 #   operand_a = 0
 #   operand_b = 2
 # 
-# Printing results:                  165 ns 
-# Read from register location 5: 
-#   opcode = 6 (DIV)
-#   operand_a = 4
-#   operand_b = 10
-# 
-# Printing results:                  175 ns 
-# Read from register location 6: 
-#   opcode = 3 (ADD)
-#   operand_a = -15
-#   operand_b = 3
-# 
-# Printing results:                  185 ns 
-# Read from register location 7: 
-#   opcode = 5 (MULT)
-#   operand_a = 15
-#   operand_b = 8
-# 
-# Printing results:                  195 ns 
-# Read from register location 8: 
-#   opcode = 0 (ZERO)
-#   operand_a = 5
-#   operand_b = 14
-# 
-# Printing results:                  205 ns 
-# Read from register location 9: 
-#   opcode = 7 (MOD)
-#   operand_a = 15
-#   operand_b = 9
-# 
-# Printing results:                  215 ns 
+# Printing results:                  115 ns 
 # 
 # ***********************************************************
 # ***  THIS IS NOT A SELF-CHECKING TESTBENCH (YET).  YOU  ***
@@ -191,10 +131,10 @@
 # ***  MATCH THE INPUT VALUES FOR EACH REGISTER LOCATION  ***
 # ***********************************************************
 # 
-# ** Note: $finish    : ../lab01_testbench-interface/instr_register_test.sv(99)
-#    Time: 220 ns  Iteration: 2  Instance: /top/test
+# ** Note: $finish    : ../lab01_testbench-interface/instr_register_test.sv(100)
+#    Time: 120 ns  Iteration: 2  Instance: /top/test
 # 1
-# Break in Task run at ../lab01_testbench-interface/instr_register_test.sv line 99
+# Break in Task run at ../lab01_testbench-interface/instr_register_test.sv line 100
 # Simulation Breakpoint: 1
-# Break in Task run at ../lab01_testbench-interface/instr_register_test.sv line 99
-# MACRO ./run.do PAUSED at line 48
+# Break in Task run at ../lab01_testbench-interface/instr_register_test.sv line 100
+# MACRO ./run.do PAUSED at line 51

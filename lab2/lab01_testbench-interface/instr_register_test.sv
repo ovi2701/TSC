@@ -17,7 +17,7 @@ module instr_register_test
 
   //initial begin
   class first_test;
-  parameter NR_OF_OPERATIONS = 10;
+  parameter NR_OF_OPERATIONS = 5;
   virtual tb_ifc.TB intf_lab2;
 
   covergroup my_coverage;
