@@ -13,6 +13,7 @@ interface tb_ifc (input logic clk);
   logic          reset_n;
   opcode_t       opcode;
   operand_t      operand_a, operand_b;
+  operand_r      result;
   address_t      write_pointer, read_pointer;
   instruction_t  instruction_word;
   
@@ -25,6 +26,7 @@ interface tb_ifc (input logic clk);
 	output   write_pointer;
 	output   read_pointer;
 	input  instruction_word;
+  input result;
   endclocking
   
   modport TB(clocking cb);

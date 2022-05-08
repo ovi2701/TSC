@@ -11,6 +11,7 @@ entity instr_register is
         opcode          : in     work.instr_register_pkg.opcode_t;
         write_pointer   : in     vl_logic_vector(4 downto 0);
         read_pointer    : in     vl_logic_vector(4 downto 0);
-        instruction_word: out    work.instr_register_pkg.instruction_t
+        instruction_word: out    work.instr_register_pkg.instruction_t;
+        result          : out    vl_logic_vector(63 downto 0)
     );
 end instr_register;

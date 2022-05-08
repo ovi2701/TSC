@@ -38,7 +38,7 @@ module instr_register_test
       bins opcode_positive [] = {[1:7]};
     }
 
-    RES_COVER:coverpoint intf_lab2.cb.instruction_word.res{
+    RES_COVER:coverpoint intf_lab2.cb.instruction_word.result{
       bins res_neg [] = {[-30:-1]};
       bins res_zero = {0};
       bins res_pos [] = {[1:30]};
@@ -125,6 +125,7 @@ module instr_register_test
     $display("  opcode = %0d (%s)", intf_lab2.cb.opcode, intf_lab2.cb.opcode.name);
     $display("  operand_a = %0d",   intf_lab2.cb.operand_a);
     $display("  operand_b = %0d\n", intf_lab2.cb.operand_b);
+    $display("  result = %0d\n", intf_lab2.cb.result);
 	$display("Printing transaction: %d ns ",$time);
   my_coverage.sample();
   endfunction: print_transaction
@@ -134,6 +135,7 @@ module instr_register_test
     $display("  opcode = %0d (%s)", intf_lab2.cb.instruction_word.opc, intf_lab2.cb.instruction_word.opc.name);
     $display("  operand_a = %0d",   intf_lab2.cb.instruction_word.op_a);
     $display("  operand_b = %0d\n", intf_lab2.cb.instruction_word.op_b);
+    $display("  result = %0d\n", intf_lab2.cb.instruction_word.result);
 	$display("Printing results: %d ns ",$time);
   my_coverage.sample();
   endfunction: print_results

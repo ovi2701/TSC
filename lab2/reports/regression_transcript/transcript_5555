@@ -45,7 +45,7 @@
 # ** Warning: (vsim-8441) ../lab01_testbench-interface/instr_register_test.sv(124): Clocking block output intf_lab2.cb.write_pointer is not legal in this
 # or another expression.
 #         Region: /top/test
-# ** Warning: (vsim-8441) ../lab01_testbench-interface/instr_register_test.sv(133): Clocking block output intf_lab2.cb.read_pointer is not legal in this
+# ** Warning: (vsim-8441) ../lab01_testbench-interface/instr_register_test.sv(134): Clocking block output intf_lab2.cb.read_pointer is not legal in this
 # or another expression.
 #         Region: /top/test
 # ** Error: (vish-4014) No objects found matching '/top/test/seed'.
@@ -67,11 +67,15 @@
 #   operand_a = 8
 #   operand_b = 2
 # 
+#   result = 2
+# 
 # Printing transaction:                   20 ns 
 # Writing to register location 1: 
 #   opcode = 3 (ADD)
 #   operand_a = -5
 #   operand_b = 14
+# 
+#   result = 9
 # 
 # Printing transaction:                   30 ns 
 # Writing to register location 2: 
@@ -79,17 +83,23 @@
 #   operand_a = 13
 #   operand_b = 8
 # 
+#   result = 5
+# 
 # Printing transaction:                   40 ns 
 # Writing to register location 3: 
 #   opcode = 2 (PASSB)
 #   operand_a = -12
 #   operand_b = 12
 # 
+#   result = 12
+# 
 # Printing transaction:                   50 ns 
 # Writing to register location 4: 
 #   opcode = 4 (SUB)
 #   operand_a = 0
 #   operand_b = 2
+# 
+#   result = -2
 # 
 # Printing transaction:                   60 ns 
 # 
@@ -99,11 +109,15 @@
 #   operand_a = 8
 #   operand_b = 2
 # 
+#   result = 2
+# 
 # Printing results:                   75 ns 
 # Read from register location 1: 
 #   opcode = 3 (ADD)
 #   operand_a = -5
 #   operand_b = 14
+# 
+#   result = 9
 # 
 # Printing results:                   85 ns 
 # Read from register location 2: 
@@ -111,17 +125,23 @@
 #   operand_a = 13
 #   operand_b = 8
 # 
+#   result = 5
+# 
 # Printing results:                   95 ns 
 # Read from register location 3: 
 #   opcode = 2 (PASSB)
 #   operand_a = -12
 #   operand_b = 12
 # 
+#   result = 12
+# 
 # Printing results:                  105 ns 
 # Read from register location 4: 
 #   opcode = 4 (SUB)
 #   operand_a = 0
 #   operand_b = 2
+# 
+#   result = -2
 # 
 # Printing results:                  115 ns 
 # 
@@ -138,3 +158,4 @@
 # Simulation Breakpoint: 1
 # Break in Task run at ../lab01_testbench-interface/instr_register_test.sv line 100
 # MACRO ./run.do PAUSED at line 51
+add wave sim:/top/dut/*
