@@ -39,9 +39,9 @@ module instr_register_test
     }
 
     RES_COVER:coverpoint intf_lab2.cb.instruction_word.result{
-      bins res_neg [] = {[-30:-1]};
+      bins res_neg [] = {[-225:-1]};
       bins res_zero = {0};
-      bins res_pos [] = {[1:30]};
+      bins res_pos [] = {[1:225]};
 
     }
 

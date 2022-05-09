@@ -9,7 +9,7 @@
 # 
 # Top level modules:
 # 	top
-# vsim -coverage -sva -quiet -sv_seed 5555 -novopt top 
+# vsim -coverage -sva -quiet -sv_seed 1234 -novopt top 
 # Refreshing C:\Users\botsc\Desktop\TSC\lab2\sim\work.instr_register_pkg
 # Refreshing C:\Users\botsc\Desktop\TSC\lab2\sim\work.top
 # Refreshing C:\Users\botsc\Desktop\TSC\lab2\sim\work.tb_ifc
@@ -63,85 +63,85 @@
 # 
 # Writing values to register stack...
 # Writing to register location 0: 
-#   opcode = 2 (PASSB)
-#   operand_a = 8
-#   operand_b = 2
+#   opcode = 4 (SUB)
+#   operand_a = -14
+#   operand_b = 8
 # 
-#   result = 2
+#   result = -22
 # 
 # Printing transaction:                   20 ns 
 # Writing to register location 1: 
-#   opcode = 3 (ADD)
-#   operand_a = -5
-#   operand_b = 14
+#   opcode = 7 (MOD)
+#   operand_a = -1
+#   operand_b = 15
 # 
-#   result = 9
+#   result = -1
 # 
 # Printing transaction:                   30 ns 
 # Writing to register location 2: 
-#   opcode = 4 (SUB)
-#   operand_a = 13
-#   operand_b = 8
+#   opcode = 7 (MOD)
+#   operand_a = 2
+#   operand_b = 1
 # 
-#   result = 5
+#   result = 0
 # 
 # Printing transaction:                   40 ns 
 # Writing to register location 3: 
-#   opcode = 2 (PASSB)
-#   operand_a = -12
-#   operand_b = 12
+#   opcode = 3 (ADD)
+#   operand_a = 0
+#   operand_b = 3
 # 
-#   result = 12
+#   result = 3
 # 
 # Printing transaction:                   50 ns 
 # Writing to register location 4: 
 #   opcode = 4 (SUB)
-#   operand_a = 0
-#   operand_b = 2
+#   operand_a = -3
+#   operand_b = 9
 # 
-#   result = -2
+#   result = -12
 # 
 # Printing transaction:                   60 ns 
 # 
 # Reading back the same register locations written...
 # Read from register location 0: 
-#   opcode = 2 (PASSB)
-#   operand_a = 8
-#   operand_b = 2
+#   opcode = 4 (SUB)
+#   operand_a = -14
+#   operand_b = 8
 # 
-#   result = 2
+#   result = -22
 # 
 # Printing results:                   75 ns 
 # Read from register location 1: 
-#   opcode = 3 (ADD)
-#   operand_a = -5
-#   operand_b = 14
+#   opcode = 7 (MOD)
+#   operand_a = -1
+#   operand_b = 15
 # 
-#   result = 9
+#   result = -1
 # 
 # Printing results:                   85 ns 
 # Read from register location 2: 
-#   opcode = 4 (SUB)
-#   operand_a = 13
-#   operand_b = 8
+#   opcode = 7 (MOD)
+#   operand_a = 2
+#   operand_b = 1
 # 
-#   result = 5
+#   result = 0
 # 
 # Printing results:                   95 ns 
 # Read from register location 3: 
-#   opcode = 2 (PASSB)
-#   operand_a = -12
-#   operand_b = 12
+#   opcode = 3 (ADD)
+#   operand_a = 0
+#   operand_b = 3
 # 
-#   result = 12
+#   result = 3
 # 
 # Printing results:                  105 ns 
 # Read from register location 4: 
 #   opcode = 4 (SUB)
-#   operand_a = 0
-#   operand_b = 2
+#   operand_a = -3
+#   operand_b = 9
 # 
-#   result = -2
+#   result = -12
 # 
 # Printing results:                  115 ns 
 # 
@@ -158,3 +158,4 @@
 # Simulation Breakpoint: 1
 # Break in Task run at ../lab01_testbench-interface/instr_register_test.sv line 100
 # MACRO ./run.do PAUSED at line 51
+add wave sim:/top/dut/*
